@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    background: rgb(99 102 241);
+    color: #fff;
+}
+body{
+    background: #080a12;
+    overflow-x: hidden;
+}
+section{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.gradient-background, .gradient-text {
+    background: linear-gradient(90deg, rgb(30 64 175), rgb(6 182 212), rgb(99 102 241));
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #080a12; 
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(30 64 175), rgb(6 182 212), rgb(99 102 241));
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(59 130 246);
+    /* background: #2563eb; */
+}
+.toast{
+    animation: reduce 5s linear forwards;
+}
+@keyframes reduce {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
+
+
+@media screen and (max-width: 1023px ) {
+    .gradient-background{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 768px ) {
+    .gradient-background{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 639px ) {
+    .gradient-background{
+        font-size: 30px;
+        text-align: left;
+    }
+    .gradient-text{
+        font-size: 30px;
+    }
+}
+
+.swiper-pagination-bullet{
+    background: rgb(59 130 246);
+}
