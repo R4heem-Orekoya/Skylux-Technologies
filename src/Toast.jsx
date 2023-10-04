@@ -21,7 +21,7 @@ const Toast = ({isToastActive, setIsToastActive, error}) => {
 
   return (
     <div
-      className={`overflow-hidden fixed z-50 top-[90px] right-4 rounded-lg px-6 sm:px-3 max-w-[90%] min-w-[250px] py-6 bg-blue-900/30 backdrop-blur-2xl ring-[1px] ring-white/50`}
+      className={`overflow-hidden sticky z-50 top-[90px] right-4 rounded-lg px-6 sm:px-3 max-w-[90%] min-w-[250px] py-6 bg-blue-900/30 backdrop-blur-2xl ring-[1px] ring-white/50`}
     >
       <button onClick={closeToast} className="absolute top-3 right-3">
         <X size={15} className="text-white" />
