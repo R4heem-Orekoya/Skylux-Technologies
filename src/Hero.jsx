@@ -51,7 +51,7 @@ const Hero = () => {
         whileInView={{opacity: 1}} 
         transition={{duration: 0.8, delay: 1.3}}
       >
-      <Lottie animationData={lottieanimation} className='mt-3 mx-auto w-[50rem] aspect-square max-w-[80%] md:max-w-[20%] sm:mt-motion.6'/>
+      <Lottie animationData={lottieanimation} className='mt-3 mx-auto w-[50rem] aspect-square max-w-[80%] md:max-w-[50%] sm:mt-motion.6'/>
       </motion.div>
     </section>
   );
