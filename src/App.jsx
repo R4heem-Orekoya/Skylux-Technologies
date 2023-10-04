@@ -13,7 +13,7 @@ import Testimonials from './Testimonials'
 
 const App = () => {
   return (
-    <div className='font-poppins'>
+    <div className='w-full font-poppins'>
       <Navbar />
       <Hero />
       <About />

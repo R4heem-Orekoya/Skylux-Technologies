@@ -8,7 +8,7 @@ import { MessagesSquare, Mouse } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className="text-white flex flex-col items-center text-center py-[7%] sm:py-[20%] relative after:absolute after:z-20 after:top-[-500px] after:w-[600px] after:aspect-square after:opacity-20 after:bg-gradient-to-r after:from-blue-950 after:to-cyan-950 after:rounded-full after:animate-pulse after:blur-3xl after:left-[50%] after:translate-x-[-50%]">
+    <section className="text-white flex  flex-col sm:overflow-hidden items-center text-center py-[7%] sm:py-[20%] relative after:absolute after:z-20 after:top-[-500px] after:w-[600px] after:sm:w-0 after:sm:top-[-100px] after:aspect-square after:opacity-20 after:bg-gradient-to-r after:from-blue-950 after:to-cyan-950 after:rounded-full after:animate-pulse after:blur-3xl after:left-[50%] after:translate-x-[-50%]">
       <Lottie animationData={lottiecheck} className="absolute bottom-0 left-0 w-[200px] animate-bounce lg:hidden"/>
       <motion.h1 
         initial={{opacity: 0}}
@@ -51,7 +51,7 @@ const Hero = () => {
         whileInView={{opacity: 1}} 
         transition={{duration: 0.8, delay: 1.3}}
       >
-      <Lottie animationData={lottieanimation} className='mt-3 mx-auto w-[50rem] aspect-square max-w-[80%] md:max-w-[50%] sm:mt-motion.6'/>
+      <Lottie animationData={lottieanimation} className='mt-3 mx-auto w-[50rem] aspect-square max-w-[80%] md:max-w-[20%] sm:mt-motion.6'/>
       </motion.div>
     </section>
   );

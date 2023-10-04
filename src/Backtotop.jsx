@@ -19,7 +19,7 @@ const Backtotop = () => {
     document.addEventListener('scroll', toggleVisiblity);
     
   return (
-    <button onClick={scrollToTop} className={`grid place-items-center text-3xl sticky ${!visible ? 'bottom-[-100%]' : 'bottom-8'} duration-500 ease right-8 w-[60px] bg-black/40 backdrop-blur-2xl aspect-square rounded-full ring-1 ring-white/20`}>
+    <button onClick={scrollToTop} className={`grid place-items-center text-3xl fixed ${!visible ? 'bottom-[-100%]' : 'bottom-8'} duration-500 ease right-8 w-[60px] bg-black/40 backdrop-blur-2xl aspect-square rounded-full ring-1 ring-white/20`}>
       ☝️
     </button>
   )
