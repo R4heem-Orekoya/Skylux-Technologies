@@ -49,8 +49,8 @@ const Contact = () => {
         Get in touch with us
       </motion.h2>
 
-      <div className="grid grid-cols-7 lg:grid-cols-1 gap-20">
-        <div className="flex flex-col items-center justify-center flex-wrap gap-8 col-span-2 lg:col-span-5  col-start-2 lg:col-start-1">
+      <div className="flex flex-wrap md:flex-col gap-20">
+        <div className="flex flex-col items-center mx-auto justify-center flex-wrap gap-8">
             <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -93,9 +93,9 @@ const Contact = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.3 }} 
-            className="flex-1 col-span-3 lg:col-span-5 mt-2 md:mt-6">
+            className="flex-1 max-w-[700px] mt-2 md:mt-6">
             <h3 className="text-xl font-semibold md:text-center">Send us a message</h3>
-            <form ref={form} className="flex items-start flex-col mt-6 gap-6" onSubmit={sendEmail}>
+            <form ref={form} className="flex items-start flex-col mt-6 gap-6 max-w-full" onSubmit={sendEmail}>
                 <input value={name} onChange={(e) => setName(e.target.value)} required type="text" name='from_name' placeholder="Name" className="w-full h-[50px] outline-none px-4 text-white bg-transparent ring-2 ring-white/50 focus:ring-blue-600 rounded-md"/>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} required type="email" name="Email" placeholder="Email" className="w-full h-[50px] outline-none px-4 text-white bg-transparent ring-2 ring-white/50 focus:ring-blue-600 rounded-md"/>
                 <input value={subject} onChange={(e) => setSubject(e.target.value)} required type="text" name='subject' placeholder="Subject" className="w-full h-[50px] outline-none px-4 text-white bg-transparent ring-2 ring-white/50 focus:ring-blue-600 rounded-md"/>
