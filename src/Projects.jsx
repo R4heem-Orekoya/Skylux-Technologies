@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Project1 from "./assets/project1.png";
-import Project2 from "./assets/project2.jpg";
+import Project2 from "./assets/project2.png";
 import Project3 from "./assets/project3.jpg";
 import Project4 from "./assets/project4.jpg";
-import Project5 from "./assets/project5.jpg";
+import Project5 from "./assets/project3.png";
 import Project6 from "./assets/project6.jpg";
 
 const Projects = () => {
@@ -35,9 +35,8 @@ const Projects = () => {
               Arch Move Website
             </h3>
             <p className="text-base text-white/70 font-normal mt-4 mb-8 md:textsm">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae nostrum sint repellat odit minus magni itaque quas
-              libero ex sunt?
+              Personal website built for an architect. The website is mobile responsive, has a 
+              modern look and a nice user experience.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -46,12 +45,13 @@ const Projects = () => {
               <span className="px-2 py-1 text-sm bg-yellow-400 rounded-md">
                 #Javascript
               </span>
+              <span className="px-2 py-1 text-sm bg-purple-600 rounded-md">#Figma</span>
             </div>
           </div>
         </motion.div>
 
         <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.2}} className="ring-1 ring-purple-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
-          <a href="https://google.com" target="_blank">
+          <a href="https://sky-tech-xx.github.io/Bites/" target="_blank">
             <div className="h-[250px] w-full">
               <img
                 src={Project2}
@@ -63,12 +63,11 @@ const Projects = () => {
 
           <div className="p-8 lg:p-6 md:p-4 sm:p-8">
             <h3 className="text-green-600 text-xl font-semibold">
-              Workhu Website
+              Bites Website
             </h3>
             <p className="text-base text-white/70 font-normal mt-4 mb-8 md:textsm">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae nostrum sint repellat odit minus magni itaque quas
-              libero ex sunt?
+              Website built for a restaurant at a very fair price. The website looks nice
+              across various devices and it also has a friendly user experience.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -76,14 +75,14 @@ const Projects = () => {
               <span className="px-2 py-1 text-sm bg-blue-400 rounded-md">
                 #Tailwind
               </span>
-              <span className="px-2 py-1 text-sm bg-pink-500 rounded-md">
-                #Framer Motion
+              <span className="px-2 py-1 text-sm bg-purple-600 rounded-md">
+                #Figma
               </span>
             </div>
           </div>
         </motion.div>
 
-        <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.3}} className="ring-1 ring-yellow-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
+        {/* <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.3}} className="ring-1 ring-yellow-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
           <a href="https://google.com" target="_blank">
             <div className="h-[250px] w-full">
               <img
@@ -115,8 +114,9 @@ const Projects = () => {
               </span>
             </div>
           </div>
-        </motion.div>
-        <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.4}} className="ring-1 ring-pink-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
+        </motion.div> */}
+
+        {/* <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.4}} className="ring-1 ring-pink-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
           <a href="https://google.com" target="_blank">
             <div className="h-[250px] w-full">
               <img
@@ -133,8 +133,7 @@ const Projects = () => {
             </h3>
             <p className="text-base text-white/70 font-normal mt-4 mb-8 md:textsm">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae nostrum sint repellat odit minus magni itaque quas
-              libero ex sunt?
+              Molestiae nostrum sint.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -149,9 +148,10 @@ const Projects = () => {
               <span className="px-2 py-1 text-sm bg-cyan-500 rounded-md">#Canva</span>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
+
         <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}} className="ring-1 ring-green-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
-          <a href="https://google.com" target="_blank">
+          <a href="https://sky-tech-xx.github.io/ThistleGym/" target="_blank">
             <div className="h-[250px] w-full">
               <img
                 src={Project5}
@@ -163,28 +163,29 @@ const Projects = () => {
 
           <div className="p-8 lg:p-6 md:p-4 sm:p-8">
             <h3 className="text-pink-600 text-xl font-semibold">
-              Fitness Website
+              Thistle Gym Website
             </h3>
             <p className="text-base text-white/70 font-normal mt-4 mb-8 md:textsm">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae nostrum sint repellat odit minus magni itaque quas
-              libero ex sunt?
+              A gym website with a modern and simple look. Great user experience and
+              secured payment integration.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <span className="px-2 py-1 text-sm bg-purple-600 rounded-md">#Figma</span>
-              <span className="px-2 py-1 text-sm bg-orange-500 rounded-md">#HTML</span>
+            <span className="px-2 py-1 text-sm bg-blue-600 rounded-md">#React</span>
               <span className="px-2 py-1 text-sm bg-blue-400 rounded-md">
                 #Tailwind
               </span>
-              <span className="px-2 py-1 text-sm bg-yellow-400 rounded-md">
-                #Javascript
+              <span className="px-2 py-1 text-sm bg-purple-600 rounded-md">
+                #Figma
+              </span>
+              <span className="px-2 py-1 text-sm bg-blue-400 rounded-md">
+                #Photoshop
               </span>
             </div>
           </div>
         </motion.div>
 
-        <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.6}} className="ring-1 ring-orange-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
+        {/* <motion.div initial={{opacity: 0, y: 80}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.6}} className="ring-1 ring-orange-500 rounded-lg overflow-hidden hover:shadow-2xl shadow-slate-100">
           <a href="https://google.com" target="_blank">
             <div className="h-[250px] w-full">
               <img
@@ -201,8 +202,7 @@ const Projects = () => {
             </h3>
             <p className="text-base text-white/70 font-normal mt-4 mb-8 md:textsm">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae nostrum sint repellat odit minus magni itaque quas
-              libero ex sunt?
+              Molestiae nostrum sint repellat.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -213,7 +213,7 @@ const Projects = () => {
               </span>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

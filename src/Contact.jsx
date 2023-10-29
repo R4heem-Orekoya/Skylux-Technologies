@@ -59,7 +59,7 @@ const Contact = () => {
             >
             <Mail className="text-red-500" />
             <a href="mailto:skyluxtechnologies23@email.com" className="underline">
-                skytech23@gmail.com
+              skyluxtechnologies23
             </a>
             <h3 className="text-red-500">Email</h3>
             </motion.div>
@@ -83,7 +83,7 @@ const Contact = () => {
             >
             <Linkedin className="text-blue-500" />
             <a href="http://www.linkedin.com/in/skytech-skytech-technologies-765413292" className="underline">
-              skytech23
+              Skylux Technologies
             </a>
             <h3 className="text-blue-500">LinkedIn</h3>
             </motion.div>
